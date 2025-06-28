@@ -12,9 +12,9 @@ import java.sql.ResultSet;
 class LoginPage extends JFrame{
     LoginPage(){
         Font f1 = new Font("Calibri",Font.PLAIN,20);
-        Font f2 = new Font("Futura",Font.BOLD,35);
+        Font f2 = new Font("Segoe UI Emoji",Font.BOLD,35);
 
-        JLabel title = new JLabel("Smart Expense Tracker",JLabel.CENTER);
+        JLabel title = new JLabel("\uD83D\uDCC8 Smart Expense Tracker",JLabel.CENTER);
         JLabel l1 = new JLabel("Username:");
         JTextField t1 = new JTextField(15);
         JLabel l2 = new JLabel("Password:");
@@ -32,13 +32,13 @@ class LoginPage extends JFrame{
         b1.setFont(f1);
         l3.setFont(f1);
 
-        title.setBounds(200, 40, 400, 50);
-        l1.setBounds(150, 120, 120, 30);
-        t1.setBounds(280, 120, 300, 30);
-        l2.setBounds(150, 180, 120, 30);
-        t2.setBounds(280, 180, 300, 30);
-        b1.setBounds(300, 250, 200, 40);
-        l3.setBounds(240, 310, 400, 30);
+        title.setBounds(150, 40, 500, 50);
+        l1.setBounds(150, 160, 120, 30);
+        t1.setBounds(280, 160, 300, 30);
+        l2.setBounds(150, 220, 120, 30);
+        t2.setBounds(280, 220, 300, 30);
+        b1.setBounds(300, 280, 200, 40);
+        l3.setBounds(240, 340, 400, 30);
 
         Container c = getContentPane();
         c.setLayout(null);
@@ -75,7 +75,7 @@ class LoginPage extends JFrame{
                             if(rs.next())
                             {
                                 JOptionPane.showMessageDialog(null,"Successfull");
-                                new Transaction();
+                                new Home(username);
                                 dispose();
                             }
                             else {

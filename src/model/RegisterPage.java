@@ -10,9 +10,9 @@ import java.sql.ResultSet;
 class RegisterPage extends JFrame {
     RegisterPage(){
         Font f1 = new Font("Calibri",Font.PLAIN,20);
-        Font f2 = new Font("Futura",Font.BOLD,35);
+        Font f2 = new Font("Segoe UI Emoji",Font.BOLD,35);
 
-        JLabel title = new JLabel("Register",JLabel.CENTER);
+        JLabel title = new JLabel("\uD83D\uDCDD Register",JLabel.CENTER);
         JLabel l1 = new JLabel("Set Username:");
         JTextField t1 = new JTextField(10);
         JLabel l4 = new JLabel("Email:");
@@ -52,9 +52,9 @@ class RegisterPage extends JFrame {
         c.add(b1);
         c.add(b2);
 
-        int labelX = 200, fieldX = 380, yStart = 100, width = 180, height = 30, gap = 50;
+        int labelX = 200, fieldX = 380, yStart = 125, width = 180, height = 30, gap = 50;
 
-        title.setBounds(250, 20, 300, 50);
+        title.setBounds(250, 40, 300, 50);
 
         l1.setBounds(labelX, yStart, width, height);
         t1.setBounds(fieldX, yStart, width, height);
@@ -108,8 +108,8 @@ class RegisterPage extends JFrame {
                                 pst.setString(2,email);
                                 pst.setString(3,password);
                                 pst.executeUpdate();
-                                JOptionPane.showMessageDialog(null,"SignUp Successfull");
-//                                new Transaction(t1.getText());
+                                JOptionPane.showMessageDialog(null,"SignUp Successfull, Redirecting to Login Page...");
+                                new LoginPage();
                                 dispose();
                             }
                         }
