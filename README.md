@@ -11,10 +11,13 @@ A desktop-based Smart Expense Tracker built using **Java Swing** and **MySQL** t
 
 ## 📷 Preview
 
+> ![Login Page](assets/login.png)  
+> _User login screen._
+
 > ![Transactions Page](assets/transactions.png)  
 > _Page showing a list of all income/expense transactions._
 
-> ![Analytics Page](assets/Analytics.png)  
+> ![Analytics Page](assets/analytics.png)  
 > _Analytics view with month-wise income and expense bar chart._
 
 ---
