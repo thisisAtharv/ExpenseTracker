@@ -17,13 +17,27 @@ class CreateCategory extends JFrame {
         JTextField t1 = new JTextField(15);
         JLabel l2 = new JLabel("Category Color:");
         JButton b1 = new JButton("Pick Color");
+        b1.setForeground(new Color(255, 255, 255));
+        b1.setBackground(new Color(50, 50, 50));
+        b1.setFocusPainted(false);
+        b1.setBorderPainted(false);
+        b1.setOpaque(true);
         JPanel p1 = new JPanel();
         p1.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         p1.setPreferredSize(new Dimension(30,30));
         p1.setBackground(selectedColor);
         JButton b2 = new JButton("Create");
+        b2.setBackground(new Color(0, 153, 102));
+        b2.setForeground(Color.WHITE);
+        b2.setFocusPainted(false);
+        b2.setBorderPainted(false);
+        b2.setOpaque(true);
         JButton b3 = new JButton("Back");
-
+        b3.setBackground(new Color(70, 70, 70));
+        b3.setForeground(new Color(200, 200, 200));
+        b3.setFocusPainted(false);
+        b3.setBorderPainted(false);
+        b3.setOpaque(true);
 
         Container c = getContentPane();
         c.setLayout(null);

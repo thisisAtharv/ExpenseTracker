@@ -160,6 +160,11 @@ class ViewExpense extends JFrame {
 
 
         JButton b1 = new JButton("Back");
+        b1.setBackground(new Color(70, 70, 70));
+        b1.setForeground(new Color(200, 200, 200));
+        b1.setFocusPainted(false);
+        b1.setBorderPainted(false);
+        b1.setOpaque(true);
         b1.addActionListener(
                 a->{
                     JOptionPane.showMessageDialog(null,"Redirecting to Home Page...");
@@ -168,7 +173,11 @@ class ViewExpense extends JFrame {
                 }
         );
         JButton b2 = new JButton("Edit");
-        b2.setBackground(new Color(197, 179, 179));
+        b2.setBackground(new Color(0, 153, 102));
+        b2.setForeground(Color.WHITE);
+        b2.setFocusPainted(false);
+        b2.setBorderPainted(false);
+        b2.setOpaque(true);
         b2.addActionListener(
                 a->{
                     int row = table.getSelectedRow();
@@ -253,7 +262,7 @@ class ViewExpense extends JFrame {
 
 
         JPanel btmPanel = new JPanel();
-        btmPanel.setBackground(new Color(224,224,224));
+//        btmPanel.setBackground(new Color(51, 50, 50));
         btmPanel.setLayout(new FlowLayout(FlowLayout.CENTER,10,10));
         btmPanel.add(b1);
         btmPanel.add(b2);

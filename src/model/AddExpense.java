@@ -14,6 +14,7 @@ class AddExpense extends JFrame {
         Font f2 = new Font("Segeo UI Emoji",Font.PLAIN,22);
 
         JLabel title = new JLabel("Add Transactions",JLabel.CENTER);
+        title.setForeground(new Color(0, 255, 180));
         JLabel l3 = new JLabel("Category:");
         JComboBox<CategoryItem> cbCategory = new JComboBox<>();
         JLabel l4 = new JLabel("Type:");
@@ -23,7 +24,17 @@ class AddExpense extends JFrame {
         JLabel l2 = new JLabel("Description:");
         JTextField t2 = new JTextField(15);
         JButton subBtn = new JButton("Submit");
+        subBtn.setBackground(new Color(0, 153, 102));
+        subBtn.setForeground(Color.WHITE);
+        subBtn.setFocusPainted(false);
+        subBtn.setBorderPainted(false);
+        subBtn.setOpaque(true);
         JButton backBtn = new JButton("Back");
+        backBtn.setBackground(new Color(70, 70, 70));
+        backBtn.setForeground(new Color(200, 200, 200));
+        backBtn.setFocusPainted(false);
+        backBtn.setBorderPainted(false);
+        backBtn.setOpaque(true);
 
         title.setFont(f1);
         l3.setFont(f2);

@@ -16,7 +16,7 @@ class ViewCategory extends JFrame {
     ArrayList<Integer> categoryIds = new ArrayList<>();
     ViewCategory(String username){
 
-        Font f1 = new Font("Calibri",Font.PLAIN,18);
+        Font f1 = new Font("Futura",Font.BOLD,25);
         Font f2 = new Font("Segoe UI Emoji",Font.PLAIN,18);
 
         JLabel title = new JLabel("Categories for "+username+" :",JLabel.CENTER);
@@ -59,9 +59,11 @@ class ViewCategory extends JFrame {
         });
 
         JButton b1 = new JButton("Back");
-        b1.setBackground(new Color(255, 51, 51));
-        b1.setForeground(Color.WHITE);
+        b1.setBackground(new Color(70, 70, 70));
+        b1.setForeground(new Color(200, 200, 200));
         b1.setFocusPainted(false);
+        b1.setBorderPainted(false);
+        b1.setOpaque(true);
         b1.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
         b1.addActionListener(
                 a->{
@@ -76,7 +78,7 @@ class ViewCategory extends JFrame {
         topPanel.add(title, BorderLayout.CENTER);
 
         JPanel bottomPanel = new JPanel();
-        bottomPanel.setBackground(new Color(224,224,224));
+//        bottomPanel.setBackground(new Color(224,224,224));
         bottomPanel.add(b1);
 
         Container c = getContentPane();
@@ -85,7 +87,7 @@ class ViewCategory extends JFrame {
         c.add(scrollPane,BorderLayout.CENTER);
         c.add(bottomPanel,BorderLayout.SOUTH);
 
-        title.setFont(f2);
+        title.setFont(f1);
         table.setFont(f2);
         b1.setFont(f2);
         //Get the user _id.

@@ -1,5 +1,11 @@
 package model;
 
+import com.formdev.flatlaf.FlatDarculaLaf;
+import com.formdev.flatlaf.FlatDarkLaf;
+import com.formdev.flatlaf.FlatIntelliJLaf;
+import com.formdev.flatlaf.themes.FlatMacDarkLaf;
+import com.formdev.flatlaf.themes.FlatMacLightLaf;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -15,13 +21,22 @@ class LoginPage extends JFrame{
         Font f2 = new Font("Segoe UI Emoji",Font.BOLD,35);
 
         JLabel title = new JLabel("\uD83D\uDCC8 Smart Expense Tracker",JLabel.CENTER);
+//        title.setForeground(new Color(72, 133, 237));
+        title.setForeground(new Color(0, 255, 200));
         JLabel l1 = new JLabel("Username:");
         JTextField t1 = new JTextField(15);
         JLabel l2 = new JLabel("Password:");
         JPasswordField t2 = new JPasswordField(15);
         JButton b1 = new JButton("Login");
+//        b1.setForeground(Color.WHITE);
+//        b1.setBackground(new Color(0, 153, 255));
+        b1.setForeground(Color.WHITE);
+        b1.setBackground(new Color(50, 202, 202));
+        b1.setFocusPainted(false);
+        b1.setBorderPainted(false);
+        b1.setOpaque(true);
         JLabel l3 = new JLabel("Don't have an account? Register here");
-        l3.setForeground(Color.blue);
+        l3.setForeground(new Color(50, 202, 202));
         l3.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         title.setFont(f2);
@@ -106,6 +121,12 @@ class LoginPage extends JFrame{
     }
 
     public static void main(String[] args) {
+        try{
+            UIManager.setLookAndFeel(new FlatMacDarkLaf());
+        }
+        catch(Exception ex){
+            System.err.println("Failed to initialize LaF");
+        }
         new LoginPage();
     }
 }

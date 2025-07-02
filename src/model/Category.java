@@ -9,9 +9,26 @@ class Category extends JFrame {
         Font f2 = new Font("Segoe UI Emoji",Font.PLAIN,20);
 
         JLabel title = new JLabel("\uD83D\uDCC1 Manage Categories");
+        title.setForeground(new Color(0, 255, 180));
         JButton b1 = new JButton("➕ Create Category");
         JButton b2 = new JButton("\uD83D\uDCCB View Categories");
         JButton b3 = new JButton("Back");
+        b3.setBackground(new Color(70, 70, 70));
+        b3.setForeground(new Color(200, 200, 200));
+        b3.setFocusPainted(false);
+        b3.setBorderPainted(false);
+        b3.setOpaque(true);
+
+        Color buttonBg = new Color(50, 50, 50);
+        Color buttonFg = new Color(255, 255, 255);
+
+        for (JButton btn : new JButton[]{b1, b2}) {
+            btn.setBackground(buttonBg);
+            btn.setForeground(buttonFg);
+            btn.setFocusPainted(false);
+            btn.setBorderPainted(false);
+            btn.setOpaque(true);
+        }
 
         Container c = getContentPane();
         c.setLayout(null);

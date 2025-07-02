@@ -30,7 +30,7 @@ class Analytics extends JFrame {
         title.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 
         JPanel topPanel = new JPanel();
-        topPanel.setBackground(new Color(240, 240, 240));
+        topPanel.setBackground(new Color(0, 102, 204));
         topPanel.setLayout(new BorderLayout());
         topPanel.setBorder(BorderFactory.createEmptyBorder(10,10,5,10));
         topPanel.add(title,BorderLayout.CENTER);
@@ -88,6 +88,11 @@ class Analytics extends JFrame {
     //-------------
 
         JButton b1 = new JButton("Back");
+        b1.setBackground(new Color(70, 70, 70));
+        b1.setForeground(new Color(200, 200, 200));
+        b1.setFocusPainted(false);
+        b1.setBorderPainted(false);
+        b1.setOpaque(true);
         b1.addActionListener(
                 a->{
                     JOptionPane.showMessageDialog(null,"Redirecting to Home Page...");
@@ -97,7 +102,7 @@ class Analytics extends JFrame {
         );
 
         JPanel bottomPanel = new JPanel();
-        bottomPanel.setBackground(new Color(230, 230, 230));
+//        bottomPanel.setBackground(new Color(230, 230, 230));
         bottomPanel.add(b1);
 
         title.setFont(f2);
