@@ -13,6 +13,7 @@ class RegisterPage extends JFrame {
         Font f2 = new Font("Segoe UI Emoji",Font.BOLD,35);
 
         JLabel title = new JLabel("\uD83D\uDCDD Register",JLabel.CENTER);
+        title.setForeground(new Color(0, 255, 180));
         JLabel l1 = new JLabel("Set Username:");
         JTextField t1 = new JTextField(10);
         JLabel l4 = new JLabel("Email:");
@@ -22,7 +23,17 @@ class RegisterPage extends JFrame {
         JLabel l3 = new JLabel("Confirm Password:");
         JPasswordField t3 = new JPasswordField(10);
         JButton b1 = new JButton("Sign Up");
+        b1.setBackground(new Color(0, 153, 102));
+        b1.setForeground(Color.WHITE);
+        b1.setFocusPainted(false);
+        b1.setBorderPainted(false);
+        b1.setOpaque(true);
         JButton b2 = new JButton("Back");
+        b2.setBackground(new Color(70, 70, 70));
+        b2.setForeground(new Color(200, 200, 200));
+        b2.setFocusPainted(false);
+        b2.setBorderPainted(false);
+        b2.setOpaque(true);
 
 
         title.setFont(f2);
