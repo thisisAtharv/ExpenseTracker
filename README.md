@@ -14,11 +14,26 @@ A desktop-based Smart Expense Tracker built using **Java Swing** and **MySQL** t
 > ![Login Page](assets/login.png)  
 > _User login screen._
 
+> ![Register Page](assets/register.png)  
+> _New user registration form._
+
+> ![Home Page](assets/homepage.png)  
+> _Main dashboard showing key features and navigation._
+
+> ![Add Expense Page](assets/addexpense.png)  
+> _Form to add a new income or expense entry._
+
 > ![Transactions Page](assets/transactions.png)  
 > _Page showing a list of all income/expense transactions._
 
 > ![Analytics Page](assets/Analytics.png)  
 > _Analytics view with month-wise income and expense bar chart._
+
+> ![Create Category Page](assets/createcategory.png)  
+> _Form to create a new category with a name and color._
+
+> ![Manage Categories Page](assets/managecategory.png)  
+> _View, edit, or delete existing categories._
 
 ---
 
