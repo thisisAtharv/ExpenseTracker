@@ -5,7 +5,7 @@
 [![UI](https://img.shields.io/badge/UI-Java%20Swing-green.svg)](https://docs.oracle.com/javase/tutorial/uiswing/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A desktop-based Smart Expense Tracker built using **Java Swing** and **MySQL** to manage, analyze, and visualize your personal financial transactions easily and efficiently.
+Smart Expense Tracker is a desktop application built with Java Swing and MySQL that lets you record, categorize, and analyze income and expenses. Features include category management with colors, transaction filtering & search, year-wise analytics with bar charts (JFreeChart), and a customizable FlatLaf theme for a modern UI.
 
 ---
 
